@@ -1,0 +1,43 @@
+@media (max-width : 1000px){
+
+    body{
+        overflow: visible;
+    }
+    .cabeca .logo{
+        max-width: 190px;
+    }
+
+    .selecao{
+        flex-direction: column;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .selecao .piratas{
+        
+    }
+
+    .selecao .piratas .titulo{
+        font-size: 15px;
+    }
+
+    .selecao .lista-piratas{
+        gap: 7px;
+    }
+
+    .selecao .piratas img{
+        width: 105px;
+    }
+
+    .piratas-selecionado .pirata-grande{
+        width: 350px;
+        height: 350px;
+    }
+
+    .piratas-selecionado .descricao-pirata{
+        width: 80%;
+        font-size: 16px;
+        margin: 20px auto;
+    }
+    
+}
