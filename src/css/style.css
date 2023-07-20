@@ -26,11 +26,13 @@ body::before{
     z-index: -1;
     opacity: 0.7;
     
+    
 }
 
 .cabeca{
     display: flex;
     justify-content: center;
+    animation: slowLoad 1.8s ease-in-out;
 }
 
 .selecao{
@@ -39,6 +41,7 @@ body::before{
     gap: 30px;
     min-height: calc(100vh - 152px);
     justify-content: center;
+    animation: slowLoad 4s ease-in-out;
 }
 
 .selecao .lista-piratas{
@@ -83,17 +86,9 @@ body::before{
 
 .lista-piratas .pirata.selecionado {
     box-shadow: 0px 0px 8px 5px red;
-    animation: slowLoad 2s ease-in-out;
+    
 }
 
-@keyframes slowLoad {
-    0% {
-      opacity: 0; 
-    }
-    100% {
-      opacity: 1; 
-    }
-  }
 
 .piratas-selecionado{
     text-align: center;
@@ -122,8 +117,12 @@ body::before{
     letter-spacing: 1px;
 }
 
-.pirata-grande{
-    animation: slowLoad 2s ease-in-out;
+.pirata-grande,.nome-pirata,.descricao-pirata{
+    transition: transform 0.6s;
+    
+}
+.pirata-grande:hover{
+    transform: translateY(-10px);
 }
 
 @keyframes slowLoad {

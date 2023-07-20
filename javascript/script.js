@@ -9,15 +9,13 @@
      var pirataSelecionado = document.querySelector('.selecionado')    
      pirataSelecionado.classList.remove('selecionado')     
      pirata.classList.add('selecionado')
-     
-       
+         
     // guardando a img que esta na classe pirata-grande em uma variável. depois pegando o valor do id que cada pirata tem. e por fim fazendo uma interpolação comando pirataGrande.src
     
      var pirataGrande = document.querySelector('.pirata-grande')     
      var idPirata = pirata.attributes.id.value     
      pirataGrande.src = `src/imagens/img-maior/${idPirata}.png` 
     
-
     // pegando o nome dos piratas e  depois modificando o texto que ira aparecer conforme o idpirata
      var nomePirata = document.getElementById('nome-pirata')
      nomePirata.innerText = idPirata
@@ -26,7 +24,7 @@
      var descricaoPirata = document.getElementById('descricao-pirata')
      descricaoPirata.innerText = pirata.getAttribute('data-description')   
          
-    
+      
    })
 })
 
