@@ -83,7 +83,17 @@ body::before{
 
 .lista-piratas .pirata.selecionado {
     box-shadow: 0px 0px 8px 5px red;
+    animation: slowLoad 2s ease-in-out;
 }
+
+@keyframes slowLoad {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
 
 .piratas-selecionado{
     text-align: center;
@@ -113,14 +123,19 @@ body::before{
 }
 
 .pirata-grande{
-    opacity: 0;
-    animation: fade-in 2s forwards;
+    animation: slowLoad 2s ease-in-out;
 }
 
-@keyframes fade-in {
-    to {
-        opacity: 1;
+@keyframes slowLoad {
+    0% {
+      opacity: 0; 
     }
-}
+    100% {
+      opacity: 1; 
+    }
+  }
+
+
+
 
 
