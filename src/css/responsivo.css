@@ -26,7 +26,7 @@
     }
 
     .selecao .piratas img{
-        width: 105px;
+        width: 108px;
     }
 
     .piratas-selecionado .pirata-grande{
@@ -38,6 +38,10 @@
         width: 80%;
         font-size: 16px;
         margin: 20px auto;
+    }
+
+    body::before{
+        background-position: bottom;
     }
     
 }
